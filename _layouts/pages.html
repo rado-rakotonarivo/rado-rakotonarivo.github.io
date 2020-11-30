@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+    <title>{{ page.title }} - {{ site.title }}</title>
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="profile">
+        <h1>Rado A. Rakotonarivo</h1>
+        <p>ATER (Attaché Temporaire d'Enseignement et de Recherche), LIPN - Université Sorbonne Paris Nord, France</p>
+        <p> name at lipn.univ-paris13.fr </p>
+      </div>
+      <nav>
+          <ul class="nav-links">
+              <li><a href="/" {% if page.title == "Home" %}class="active-page"{% endif %}>Home</a></li>
+              <li><a href="/researches" {% if page.title == "Researches" %}class="active-page"{% endif %}>Researches</a></li>
+              <li><a href="/blog" {% if page.title == "Blog" %}class="active-page"{% endif %}>Blog</a></li>
+              <li><a href="/contact" {% if page.title == "Contact" %}class="active-page"{% endif %}>Contact</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="page-content">
+      {{ content }}
+    </div>
+  </main>
+</body>
+</html>

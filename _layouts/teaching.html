@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+    <title>{{ page.title }} - {{ site.title }}</title>
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="profile">
+        <h1>Rado A. Rakotonarivo</h1>
+        <p>ATER (Attaché Temporaire d'Enseignement et de Recherche), LIPN - Université Sorbonne Paris Nord, France</p>
+        <p> name at lipn.univ-paris13.fr </p>
+      </div>
+      <nav>
+          <ul class="nav-links">
+              <li><a href="/" {% if page.title == "Home" %}class="active-page"{% endif %}>Home</a></li>
+              <li><a href="/researches" {% if page.title == "Researches" %}class="active-page"{% endif %}>Researches</a></li>
+              <li><a href="/teaching" {% if page.title == "Teaching" %}class="active-page"{% endif %}>Teaching</a></li>
+              <!-- <li><a href="/blog" {% if page.title == "Blog" %}class="active-page"{% endif %}>Blog</a></li> -->
+          </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="page-content">
+      {{ content }}
+      <div class="listing">
+        <h2>Current courses (2020 - 2021)</h2>
+        <ul>
+          <li>Technologie web (html, css) [Ingé 1]</li>
+          <li>Programmation web (html, css) [L1 Info]</li>
+          <li>Informatique de base (C) [Ingé 1]</li>
+          <li>Éléments d'informatique (C) [L1 Info]</li>
+        </ul>
+      </div>
+
+      <div class="listing">
+        <h2>Previous courses</h2>
+        <ul>
+          <li>Architecture et système [L1 Info]</li>
+          <li>Système et réseau [L2 Info]</li>
+          <li>Programmation orientée objet (java) [L2 Info]</li>
+          <li>Principe de programmation (Haskell) [L3 Info]</li>
+          <li>Programmation fonctionnelle (ocaml) [L2 Info]</li>
+          <li>Programmation impérative (C) [L1 Info]</li>
+
+        </ul>
+      </div>
+
+
+    </div>
+  </main>
+  <footer>© Rado Rakotonarivo 2020. This website is powered by <a href="https://jekyllrb.com/">Jekyll</a>.</footer>
+</body>
+</html>
