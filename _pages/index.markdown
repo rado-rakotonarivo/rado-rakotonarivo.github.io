@@ -17,7 +17,7 @@ I mainly work on the lattice polytopes of \(R^d\). In particular, it focuses on 
   <h2>Recent works</h2>
   <ul>
     <li> <a href="#"> Enumeration of $(d,k)$-polytopes</a><br/>
-    Study of two enumeration algorithms for lattice polytopes contained in the $[0,k]^d$ hypercube: the first for the special case where <i>k</i> equals to 1; the second for the cas where <i>k</i> is greater than 1.
+    Study of two enumeration algorithms for lattice polytopes contained in the $[0,k]^d$ hypercube: the first for the case where the lattice polytope is contained in the unit hypercube; the second for the case where <i>k</i> is greater than 1.
     </li>
   </ul>
 </div>

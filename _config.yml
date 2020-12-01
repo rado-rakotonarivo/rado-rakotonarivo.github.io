@@ -71,3 +71,10 @@ include: [_pages]
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Code snippets highlighting
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  auto_ids:       true
+  toc_levels:     1..3
