@@ -37,11 +37,11 @@ An exhaustive list of my publications and given talks is listed below.
   <h2>Thesis</h2>
   <ul>
     <li>
-      <a href="assets/docs/main.pdf">"On the combinatorics of lattice polytopes : random sampling and enumeration"</a><br/>
+      <a href="../assets/docs/main.pdf">"On the combinatorics of lattice polytopes : random sampling and enumeration"</a><br/>
       PhD Thesis, supervised by Lionel Pournin and Julien David. 2020.
     </li>
     <li>
-      <a href="assets/docs/master.pdf">"Génération aléatoire de polytopes entiers"</a><br/>
+      <a href="../assets/docs/master.pdf">"Génération aléatoire de polytopes entiers"</a><br/>
       Master Thesis, supervised by Vonjy Rasendrahasina, Lionel Pournin and Julien David. 2016.
     </li>
   </ul>

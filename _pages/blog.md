@@ -4,7 +4,9 @@ title: Blog
 permalink: /blog
 ---
 
-## My Blog Posts
+[<< Get back to Teaching](/teaching)
+
+## Billets pour les étudiants
 
 <ul>
   {% for post in site.posts %}
