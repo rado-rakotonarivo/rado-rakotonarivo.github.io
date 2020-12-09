@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Ubuntu:wght@300&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,8 +8,9 @@
 }
 
 body {
-  font-size: 18px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  // font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
@@ -26,15 +28,17 @@ a:hover {
 }
 
 footer {
-  width: 100vw;
-  background: #34495e;
-  color: #ecf0f1;
+  width: 70vw;
+  // background: #34495e;
+  // color: #ecf0f1;
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
   margin-top: 2em;
-  font-size: 14px;
-  align-self:flex-end;
+  font-size: 9pt;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: solid #dfe6e9 1px;
 }
 
 header {
@@ -87,6 +91,10 @@ nav li a.active-page {
   margin-bottom: 1em;
 }
 
+.profile p {
+  font-size: 13pt;
+}
+
 .page-content {
   padding-top: 2em;
   text-align: justify;
@@ -96,6 +104,10 @@ nav li a.active-page {
   margin-top: 1em;
   color: #1abc9c;
   border-bottom: solid 1px #bdc3c7;
+}
+
+h2.listing {
+  margin-bottom: 1em;
 }
 
 .listing ul {

@@ -12,6 +12,6 @@ permalink: /blog
 
 <ul>
   {% for post in site.posts %}
-  <li style="list-style-type: circle"><a href="{{ post.url }}" class="post-preview">{{ post.title }}</a> [{{ post.date }}]</li>
+  <li style="list-style-type: circle"><a href="{{ post.url }}" class="post-preview">{{ post.title }}</a></li>
   {% endfor %}
 </ul>

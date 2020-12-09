@@ -22,7 +22,6 @@ categories: teaching prog-1
   <li>
     De manière simple, une <code>expression booléenne</code> est une expression qui donne une valeur booléenne.
   </li>
-  Il s'agit ici d'afficher une table de vérité des expressions demandées
 </ul>
 
 {% highlight c linenos %}
@@ -49,6 +48,8 @@ int main () {
 
 {% endhighlight %}
 
+<h3>Type de données</h3>
+
 {% highlight c linenos %}
 
 #include <stdio.h>
@@ -59,7 +60,7 @@ int main () {
 
   /* EXERCICE 5 : Polynome */
 
-  printf("\n\nEXERCICE 5 : Polynome\n");
+  printf("EXERCICE 5 : Polynome\n");
 
   double x = 0.707107;
   double poly = 8118 * pow(x,4) - 11482 * pow(x,3) + pow(x,2) + 5741 * x - 2030;
@@ -73,6 +74,10 @@ int main () {
 
 {% endhighlight %}
 
+<h3>Fibonacci</h3>
+
+Pour une petite documentation et retrouver les valeur de la suite, allez [ici]("https://fr.wikipedia.org/wiki/Suite_de_Fibonacci").
+
 {% highlight c linenos %}
 
 #include <stdio.h>
@@ -81,7 +86,8 @@ int main () {
 int main () {
 
   /* EXERCICE 6 : Suite de Fibonacci */
-  printf("\n\nEXERCICE 6 : Suite de Fibonacci\n");
+
+  printf("EXERCICE 6 : Suite de Fibonacci\n");
 
   // fibo (n) =   | 1 si n == 1 ou n == 2
   //              | fibo (n-1) + fibo (n-2) sinon
@@ -131,6 +137,3 @@ int main () {
 }
 
 {% endhighlight %}
-
-<p class="tips">
-</p>

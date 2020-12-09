@@ -9,9 +9,14 @@ permalink: /
 
 Hi, I'm Rado A. Rakotonarivo. My current position is _Attaché Temporaire d'Enseignement et de Recherche_ at [Institut Galilée](https://galilee.univ-paris13.fr/) where I am giving computer science courses to licence students. Besides I work as a researcher at [LIPN](http://lipn.univ-paris13.fr) in the [CALIN group](https://lipn.univ-paris13.fr/accueil/equipe/calin/). In this page you will find a bunch of useful information about me and what I am doing. You can also find my resume [here](assets/docs/cv.pdf) (I hope it is up to date).
 
+<br/>
+
+<h2 class="listing">Research overview</h2>
+
 My PhD thesis, entitled [_On the combinatorics of lattice polytopes : random sampling and enumeration_](assets/docs/main.pdf), gathers several works on the lattice polytopes of $R^d$. My PhD advisors was [Lionel Pournin](https://lipn.univ-paris13.fr/~pournin) and [Julien David](https://lipn.univ-paris13.fr/~david).
 
-I mainly work on the lattice polytopes of $R^d$. In particular, it focuses on the combinatorics of the family of the <i>d</i>-dimensional lattice polytopes contained in the $[0,k]^d$ hypercube. Due to their elusive  combinatorics, a direct approach using the symbolic method is out of reach. Hence, we made an original approach based on the description of a graph whose vertex set is the set of $(d,k)$-polytopes. In this graph, there is an edge between two polytopes if we can transform each of them into the other by an elementary move. These elementary moves are local operations performed on the polytopes. The connectedness of this graph made us study an uniform random sampler based on a Markov Chain for the $(d,k)$-polytopes of arbitrary dimension and also permited to obtain exhaustive enumeration algorithms. These are the main results gathered in my PhD thesis.
+I mainly work on the lattice polytopes of $R^d$. In particular, it focuses on the combinatorics of the family of the <i>d</i>-dimensional lattice polytopes contained in the $[0,k]^d$ hypercube. Due to their elusive  combinatorics, a direct approach using the symbolic method is out of reach. Hence, we made an original approach based on the description of a graph whose vertex set is the set of $(d,k)$-polytopes. In this graph, there is an edge between two polytopes if we can transform each of them into the other by an elementary move. These elementary moves are local operations performed on the polytopes. The connectedness of this graph made us study an uniform random sampler based on a Markov Chain for the $(d,k)$-polytopes of arbitrary dimension and also permited to obtain exhaustive enumeration algorithms.
+These are the main results gathered in my PhD thesis.
 
 <div class="listing">
   <h2>Recent works</h2>
