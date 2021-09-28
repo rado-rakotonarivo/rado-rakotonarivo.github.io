@@ -4,6 +4,6 @@ title: Teaching
 permalink: /teaching
 ---
 
-I am giving courses to Licence students at the Institut Galilée and the First year students from École d'Ingénieur Galilée, in the Université Sorbonne Paris Nord.
+I am giving courses to Bachelor and Master students at UFR Informatique - Université de Paris.
 
-Les éléments de correction pour les étudiants sont disponibles [ici](/blog).
+Les éléments de correction pour les étudiants sont disponibles (anciens cours) [ici](/blog).

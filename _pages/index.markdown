@@ -7,7 +7,7 @@ title: Home
 permalink: /
 ---
 
-Hi, I'm Rado A. Rakotonarivo. My current position is _Attaché Temporaire d'Enseignement et de Recherche_ at [Institut Galilée](https://galilee.univ-paris13.fr/) where I am giving computer science courses to licence students. Besides I work as a researcher at [LIPN](http://lipn.univ-paris13.fr) in the [CALIN group](https://lipn.univ-paris13.fr/accueil/equipe/calin/). In this page you will find a bunch of useful information about me and what I am doing. You can also find my resume [here](assets/docs/cv.pdf) (I hope it is up to date).
+Hi, I'm Rado A. Rakotonarivo. My current position is _Attaché Temporaire d'Enseignement et de Recherche_ at [Ufr Informatique](https://fr.u-paris.fr/structures/ufr-informatique) where I am giving computer science courses to bachelor and master students. Besides I work as a researcher at [IRIF](https://www.irif.fr/) in the [combinatorics](https://www.irif.fr/en/equipes/combi/index) team. In this page you will find useful information about me and what I am doing. You can also find my resume [here](assets/docs/cv.pdf) (I hope it is up to date).
 
 <br/>
 
