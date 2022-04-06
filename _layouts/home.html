@@ -1,65 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
-    <title>{{ page.title }} - {{ site.title }}</title>
-</head>
-<body>
-  <header><!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
-      <title>{{ page.title }} - {{ site.title }}</title>
-  </head>
-  <body>
-    <header>
-      <div class="header-wrapper">
-        <div class="profile">
-          <h1>Rado A. Rakotonarivo</h1>
-          <p>ATER (Attaché Temporaire d'Enseignement et de Recherche), IRIF, Université de Paris, France</p>
-          <code> raktn at irif.fr </code>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="/" {% if page.title == "Home" %}class="active-page"{% endif %}>Home</a></li>
-                <li><a href="/about" {% if page.title == "About" %}class="active-page"{% endif %}>About</a></li>
-                <li><a href="/blog" {% if page.title == "Blog" %}class="active-page"{% endif %}>Blog</a></li>
-                <li><a href="/contact" {% if page.title == "Contact" %}class="active-page"{% endif %}>Contact</a></li>
-            </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="page-content">
-        {{ content }}
-      </div>
-    </main>
-  </body>
-  </html>
+---
+layout: default
+---
 
-    <div class="profile">
-      <h1>Rado Rakotonarivo</h1>
-      <p>ATER Attaché Temporaire d'Enseignement et de Recherche</p>
-      <p></p>
-    </div>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="/" {% if page.title == "Home" %}class="active-page"{% endif %}>Home</a></li>
-            <li><a href="/about" {% if page.title == "About" %}class="active-page"{% endif %}>About</a></li>
-            <li><a href="/blog" {% if page.title == "Blog" %}class="active-page"{% endif %}>Blog</a></li>
-            <li><a href="/contact" {% if page.title == "Contact" %}class="active-page"{% endif %}>Contact</a></li>
-        </ul>
-    </nav>
-  </header>
-    <main class="page-content">
-        {{ content }}
-    </main>
-    <footer>
-        Proudly made with Jekyll
-    </footer>
-</body>
-</html>
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>

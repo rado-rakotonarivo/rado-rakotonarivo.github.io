@@ -19,7 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Rado Rakotonarivo Personnal Page
-email: rakotonarivo@lipn.univ-paris13.fr
+author: Rado Rakotonarivo
+email: raktn@irif.fr
 description: Rado Rakotonarivo Personnal Page
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rado-rakotonarivo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -27,7 +28,13 @@ twitter_username: rrado
 github_username:  rado-rakotonarivo
 
 # Build settings
-theme: null
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+theme: minima
 plugins:
   - jekyll-feed
 
@@ -71,6 +78,3 @@ include: [_pages]
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-# Code snippets highlighting
-highlighter: rouge

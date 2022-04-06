@@ -1,34 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
-    <title>{{ page.title }} - {{ site.title }}</title>
-</head>
-<body>
-  <header>
-    <div class="header-wrapper">
-      <div class="profile">
-        <h1>Rado A. Rakotonarivo</h1>
-        <p>ATER (Attaché Temporaire d'Enseignement et de Recherche), IRIF, Université de Paris, France</p>
-        <code> raktn at irif.fr </code>
-      </div>
-      <nav>
-          <ul class="nav-links">
-              <li><a href="/" {% if page.title == "Home" %}class="active-page"{% endif %}>Home</a></li>
-              <li><a href="/researches" {% if page.title == "Researches" %}class="active-page"{% endif %}>Researches</a></li>
-              <li><a href="/teaching" {% if page.title == "Teaching" %}class="active-page"{% endif %}>Teaching</a></li>
-              <li><a href="/blog" class="active-page">Blog</a></li>
-          </ul>
-      </nav>
-    </div>
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}</p>
   </header>
-  <main>
-    <div class="page-content teaching">
-      {{ content }}
-    </div>
-  </main>
-  <footer>© Rado Rakotonarivo 2020. This website is build with <a href="https://jekyllrb.com/">Jekyll</a>.</footer>
-</body>
-</html>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
