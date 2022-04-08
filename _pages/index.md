@@ -2,10 +2,12 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: default
+layout: page
 title: Home
 permalink: /
 ---
+
+## Hello there
 
 Hi, I'm Rado A. Rakotonarivo. My current position is _Attaché Temporaire d'Enseignement et de Recherche_ at [Ufr Informatique](https://fr.u-paris.fr/structures/ufr-informatique) where I am giving computer science courses to bachelor and master students. Besides I work as a researcher at [IRIF](https://www.irif.fr/) in the [combinatorics](https://www.irif.fr/en/equipes/combi/index) team. In this page you will find useful information about me and what I am doing. You can also find my resume [here](assets/docs/cv.pdf) (I hope it is up to date).
 
@@ -17,31 +19,7 @@ I mainly work on the lattice polytopes of $$\mathbb{R}^d$$. In particular, it fo
 These are the main results gathered in my PhD thesis.
 
 ## Recent work
-* [Computational methods for the enumeration of $$(d,k)$$-polytopes](#) : 
+* [Computational methods for the enumeration of $$(d,k)$$-polytopes](#):
     Study of two enumeration algorithms for lattice polytopes contained in the $$[0,k]^d$$ hypercube: the first for the case where the lattice polytope is contained in the unit hypercube; the second for the case where $$k$$ is greater than 1.
-
-<div class="list-holder">
-  <img src="assets/img/recent/exemple-3.png" alt="exemple">
-  <img src="assets/img/recent/enum-2.png" alt="enum">
-</div>
-
-+ Counting non-full dimensional polytopes with $$d+1$$ vertices in the unit cube.
-+ Enumerating lattice polygons contained in the $$2 \times 2$$ square obtained from the triangle S.
-
-## Minimal program in c
-{% highlight c%}
-
-#include <stdlib.h>
-#include <stdio.h>
-
-int main() {
-
-  int x; // déclaration d'un variable de type entière x
-  x = 3; // affectation de la valeur 3 dans x
-  x = x + 1; // affectation de la dernière valeur de x plus 1 dans x
-  printf("x = %d\n", x); // affiche à l'écran x = 4
-
-  return EXIT_SUCCESS;
-}
-
-{% endhighlight %}
+  + Counting non-full dimensional polytopes with $$d+1$$ vertices in the unit cube.
+  + Enumerating lattice polygons contained in the $$2 \times 2$$ square obtained from the triangle S.

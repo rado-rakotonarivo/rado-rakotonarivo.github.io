@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Rado Rakotonarivo Personnal Page
+title: rado.raktn
 author: Rado Rakotonarivo
 email: raktn@irif.fr
 description: Rado Rakotonarivo Personnal Page
@@ -34,7 +34,7 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
-theme: minima
+
 plugins:
   - jekyll-feed
 
@@ -78,3 +78,36 @@ include: [_pages]
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+theme: plainwhite
+plainwhite:
+  dark_mode: true
+  search: true
+  name: Rado Rakotonarivo
+  tagline: PhD. CS Teacher
+  date_format: "%b %-d, %Y"
+  portfolio_image: "assets/img/rado.jpg"
+
+  social_links:
+    twitter: rrado
+    github: rado-rakotonarivo
+    linkedIn: in/radoraktn # format: locale/username
+  
+  disqus_shortname: # programming
+
+  navigation:
+    - title: Home
+      url: "/"
+    - title: Teaching
+      url: "/teaching"
+    - title: Researches
+      url: "/researches"
+    - title: About
+      url: "/about"
+  
+  sitemap: true
+
+  # condensed_mobile:
+  #   - home
+  #   - post
+  #   - page

@@ -229,6 +229,9 @@ GEM
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
+    plainwhite (0.13)
+      jekyll (>= 3.7.3)
+      jekyll-seo-tag (>= 2.1.0)
     public_suffix (3.1.1)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
@@ -281,6 +284,7 @@ DEPENDENCIES
   github-pages (~> 209)
   jekyll-feed (~> 0.12)
   minima
+  plainwhite
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)

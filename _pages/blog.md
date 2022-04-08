@@ -1,17 +1,8 @@
 ---
-layout: default
+layout: teaching
 title: Blog
 permalink: /blog
 ---
 
-[<< Get back to Teaching](/teaching)
-
-<h2 class="listing"> Billets pour les étudiants </h2>
-
-<br/>
-
-<ul>
-  {% for post in site.posts %}
-  <li style="list-style-type: circle"><a href="{{ post.url }}" class="post-preview">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+I am giving courses to Bachelor and Master students at UFR Informatique - Université de Paris.
+Les éléments de correction pour les étudiants sont disponibles (anciens cours) ici.
