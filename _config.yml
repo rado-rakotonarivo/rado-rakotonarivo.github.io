@@ -24,7 +24,7 @@ email: raktn@irif.fr
 description: Rado Rakotonarivo Personnal Page
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rado-rakotonarivo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: rrado
+twitter_username: print_lito
 github_username:  rado-rakotonarivo
 
 # Build settings
@@ -84,12 +84,12 @@ plainwhite:
   dark_mode: true
   search: true
   name: Rado Rakotonarivo
-  tagline: PhD. CS Teacher
-  date_format: "%b %-d, %Y"
+  tagline: PhD. CS Teacher.
+  date_format: "%d %b %Y"
   portfolio_image: "assets/img/rado.jpg"
 
   social_links:
-    twitter: rrado
+    twitter: prin_lito
     github: rado-rakotonarivo
     linkedIn: in/radoraktn # format: locale/username
   

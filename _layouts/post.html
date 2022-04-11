@@ -7,7 +7,21 @@ layout: default
     <h2 class="post-title">{{ page.title | escape }}</h2>
   </a>
   <div class="post-meta">
-    <div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>
+    <div class="post-date-reading-time">
+      <div class="post-date"><i class="icon-calendar-1"></i>{{ page.date | date: date_format }}</div>
+      <!-- Implement reading time -->
+      {% capture read_time %}
+        {{ page.content | number_of_words | divided_by: 160 }}
+      {% endcapture %}
+      <div class="post-reading-time">
+        <i class="icon-hourglass"></i>
+        {% if read_time != '0' %}
+          {{ read_time }} minutes read
+        {% else %}
+          1 minute read
+        {% endif %}
+      </div>
+    </div>
     {%- if page.categories.size > 0 -%}
     <ul class="post-categories">
       {%- for tag in page.categories -%}
@@ -17,6 +31,7 @@ layout: default
     {%- endif -%}
   </div>
   <div class="post">
+    <a href="/teaching">Retour</a>
     {{ content }}
   </div>
   {%- if site.plainwhite.disqus_shortname -%}

@@ -28,9 +28,20 @@ layout: default
           <h2 class="post-title">{{ post.title | escape }}</h2>
         </a>
         <div class="post-meta">
-          <div class="post-date">
-            <i class="icon-calendar"></i>
-            {{ post.date | date: date_format }}
+          <div class="post-date-reading-time">
+            <div class="post-date"><i class="icon-calendar-1"></i>{{ post.date | date: date_format }}</div>
+            <!-- Implement reading time -->
+            {% capture read_time %}
+              {{ post.content | number_of_words | divided_by: 160 }}
+            {% endcapture %}
+            <div class="post-reading-time">
+              <i class="icon-hourglass"></i>
+              {% if read_time != '0' %}
+                {{ read_time }} minutes read
+              {% else %}
+                1 minute read
+              {% endif %}
+            </div>
           </div>
           {%- if post.categories.size > 0-%}
           <ul class="post-categories">

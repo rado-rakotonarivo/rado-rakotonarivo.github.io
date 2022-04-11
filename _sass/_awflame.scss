@@ -1,0 +1,23 @@
+// add some styling from awflame
+
+blockquote, .dark blockquote {
+    padding: 1rem 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-color: #fff5e5;
+    border: 1px solid #f3e5bf;
+    border-left-width: 1px;
+    border-left-width: 8px;
+    font-family: Alegreya Sans,BlinkMacSystemFont,-apple-system,Roboto,Helvetica Neue,Helvetica,Arial;  
+}
+
+.post blockquote p {
+    margin: 0 auto;
+}
+
+.dark .post blockquote p {
+    background-color: #fff5e5;
+    color: #222;
+    margin: 0 auto;
+}
+

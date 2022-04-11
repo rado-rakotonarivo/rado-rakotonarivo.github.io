@@ -9,7 +9,7 @@
     {
       "uid": "531bc468eecbb8867d822f1c11f1e039",
       "css": "calendar",
-      "code": 59392,
+      "code": 128262,
       "src": "fontawesome"
     },
     {
@@ -111,6 +111,24 @@
       "css": "gitlab",
       "code": 62102,
       "src": "fontawesome"
+    },
+    {
+      "uid": "567e3e257f2cc8fba2c12bf691c9f2d8",
+      "css": "moon",
+      "code": 61830,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "f6fa10cb3ffec7becb60834f50bb0182",
+      "css": "adjust",
+      "code": 59392,
+      "src": "entypo"
+    },
+    {
+      "uid": "7f6916533c0842b6cec699fd773693d3",
+      "css": "hourglass",
+      "code": 59394,
+      "src": "entypo"
     },
     {
       "uid": "1f1877aff7a2cd39092fcf73c3b5e7cb",

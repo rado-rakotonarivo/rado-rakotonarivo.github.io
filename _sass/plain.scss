@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@400;800&display=swap');
+
 @import "ext/fonts";
 @import "ext/normalize";
 @import "syntax";
+// import custpm style
+@import "awflame";
 
 $linkColor: #0a59b0;
 $mobileW: 768px;
 $smallMobileW: 480px;
 $bigScreenW: 1600px;
 $leftWidth: 220px;
+$fontFamilySerif: "Alegreya", "Merriweather", sans-serif;
+$fontFamilySansSerif: "Alegreya Sans", "Raleway", sans-serif;
 
 *,
 *:before,
@@ -15,8 +21,8 @@ $leftWidth: 220px;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-family: $fontFamilySansSerif;
+  font-size: 20px;
   line-height: 1.2em;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -165,7 +171,7 @@ main {
 
     a {
       display: block;
-      font-family: 'Merriweather';
+      font-family: $fontFamilySerif;
       text-align: center;
       padding: 1rem 0;
       text-decoration: none;
@@ -200,21 +206,28 @@ main {
     margin-right: 10px;
   }
 }
-.post-date {
-  margin-right: 10px;
+
+.post-date-reading-time {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-date, .post-reading-time {
+  margin-right: 5px;
   color: #555;
-  min-width: 150px;
+  // min-width: 150px;
 }
 .post-meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 30px;
+  margin-bottom: 4em;
   @media screen and (max-width: $mobileW) {
     flex-direction: column;
     align-items: baseline;
-    .post-date {
-      margin: 10px 0;
+    .post-date, .post-reading-time {
+      margin: 5px 0;
     }
   }
 }
@@ -224,7 +237,7 @@ main {
 
 .post-title {
   line-height: 1.2em;
-  font-size: 28px;
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 .posts,
@@ -246,10 +259,10 @@ main {
 }
 
 .post, .text-wrapper {
-  font-family: "Merriweather", sans-serif;
+  font-family: $fontFamilySerif;
   font-weight: 300;
   color: #222;
-  line-height: 1.9em;
+  line-height: 1.2em;
   p {
     margin-top: 10px;
   }
@@ -267,7 +280,10 @@ main {
   h4,
   h5,
   h6 {
-    font-family: Raleway, sans-serif;
+    font-family: $fontFamilySansSerif;
+    font-weight: 800;
+    font-variant-numeric: lining-nums;
+    letter-spacing: -0.01em;
   }
 }
 .posts-labelgroup {
