@@ -1,11 +1,55 @@
 ---
 layout: post
 title:  "Centrer des éléménts [Prog HTML]"
-published: false
+# published: false
 categories: teaching html
 ---
 
-[<< Retour](/blog)
+<style>
+.box-1 {
+  background: #ffeaa7;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.box-2 {
+  background: #e17055;
+  width: 70%;
+  padding: .75em;
+}
+
+.box-2:nth-child(2) {
+  background: #55efc4;
+}
+
+.margin-centered .box-2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*centre selon les lignes*/
+}
+
+.box-2 p {
+  background: #dfe6e9;
+  opacity: .75;
+  text-align: justify;
+}
+
+.box-sizing-content-box {
+  box-sizing: content-box;
+}
+
+.box-sizing-border-box {
+  padding: .75em;
+}
+
+</style>
 
 <h2 class="listing">Centrer des éléments html</h2>
 

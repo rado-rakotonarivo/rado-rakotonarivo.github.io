@@ -4,8 +4,6 @@ title:  "Correction TD3 [Prog 1]"
 categories: teaching prog-1
 ---
 
-[<< Retour](/blog)
-
 <p>Vous trouverez les énoncés des TD sur le moodle du cours <a href="https://moodlelms.univ-paris13.fr/course/view.php?id=1394">ici</a>.</p>
 
 

@@ -5,8 +5,6 @@ categories: teaching prog-2
 permalink: /posts/variables-pointeurs
 ---
 
-[<< Retour](/blog)
-
 <p>Vous trouverez les énoncés des TD sur le moodle du cours <a href="https://moodlelms.univ-paris13.fr/course/view.php?id=547">ici</a>.</p>
 
 <h2 class="listing">Variables et Pointeurs</h2>

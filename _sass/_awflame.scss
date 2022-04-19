@@ -21,3 +21,24 @@ blockquote, .dark blockquote {
     margin: 0 auto;
 }
 
+figure.highlight {
+    margin: 1rem 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+pre, code {
+    font-family: Menlo, monospace;
+    font-size: 15px; 
+}
+
+:not(pre) > code {
+    background: rgba(0,0,0,.06);
+    padding: 3px 5px;
+    border-radius: 4px;
+}
+
+.dark :not(pre) > code {
+    background: hsla(0,0%,100%,.1);
+    color: #cecece;
+}
