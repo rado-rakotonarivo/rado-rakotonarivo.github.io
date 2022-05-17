@@ -34,3 +34,5 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # add theme minima
 gem "minima"
 gem "plainwhite"
+
+gem "webrick", "~> 1.7"
